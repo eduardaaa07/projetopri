@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css/cadastro.css">
+</head>
+<body>
+     <!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header>
+		<!-- <a href="./layout.html" id="logo">Logo</a> -->
+		<img id="logo" src="img/logo3_16_151155.png" alt="logo">
+
+		<button id="openMenu">&#9776;</button>
+
+		<!-- Agrupa links de navegação no site. -->
+		<nav id="menu">
+
+			<button id="closeMenu">X</button>
+
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Products</a>
+			<a href="">Contact</a>
+		</nav>
+		
+	</header>
+    <head>
+        <h1>Fazer cadastro</h1>
+    </head>
+    
+    <form method="post" action="processar_matricula.php">
+        <label for="nome"></label><br>
+        <input type="text" id="nome" name="nome" placeholder="Nome:"><br><br>
+        
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="Email:" required><br><br>
+       
+        <label for="numero"></label><br>
+        <input type="number" id="numero" name="numero" placeholder="Numero:" required><br><br>
+        
+        <label for="senha"></label><br>
+        <input type="password" id="senha" name="senha" placeholder="Senha:" required><br><br>
+        
+        <label for="senha"> </label><br>
+        <input type="password" id="senha" name="senha" placeholder="Confirmar Senha"><br><br>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file-upload">Selecione um arquivo:</label>
+            <input type="file" id="file-upload" name="file-upload">
+            <input type="submit" value="Upload">
+            
+        </form>
+        <div class="card">
+            <button>Cadastrar</button>
+        </div> 
+    </form>
+</body>
+</html>

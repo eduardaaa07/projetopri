@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Aula</title>
+    <link rel="stylesheet" href="styles.css/adc_aula.css">
+</head>
+<body>
+     <!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header>
+		<!-- <a href="./layout.html" id="logo">Logo</a> -->
+		<img id="logo" src="img/logo3_16_151155.png" alt="logo">
+
+		<button id="openMenu">&#9776;</button>
+
+		<!-- Agrupa links de navegação no site. -->
+		<nav id="menu">
+
+			<button id="closeMenu">X</button>
+
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Products</a>
+			<a href="">Contact</a>
+		</nav>
+		
+	</header>
+    <div class="aula-form">
+        <h1>Adicionar Aula</h1>
+        <form>
+            <label for="titulo"></label>
+            <input type="text" id="titulo" name="titulo" placeholder="Digite o título da aula">
+
+            <label for="descricao"></label>
+            <textarea id="descricao" name="descricao" placeholder="Digite a descrição da aula"></textarea>
+
+            <label for="link"></label>
+            <input type="url" id="link" name="link" placeholder="Cole o link da aula aqui">
+
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+</body>
+</html>
